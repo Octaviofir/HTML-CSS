@@ -1,0 +1,139 @@
+/* Mobile First | 481px - 768px */
+
+:root {
+  --text-yellow: yellow;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: rgb(39, 39, 39);
+  margin: 0 auto;
+  min-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 75px;
+  text-align: center;
+  color: var(--text-yellow);
+  max-width: 1000px;
+}
+
+.main_subtitle {
+  height: 100px;
+  text-align: center;
+  color: var(--text-yellow);
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 1000px;
+}
+
+.second-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.anchors_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.topics a {
+  text-decoration: none;
+  color: white;
+  padding-right: 30px;
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.cards {
+  background-color: #404040;
+  border: 1px solid #5e5e5e;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.card_image img {
+  border-radius: 8px;
+}
+
+.card_date {
+  color: #307bec;
+  font-size: 12px;
+}
+
+.view_more_mobile a {
+  text-decoration: none;
+  color: var(--text-yellow);
+  text-align: center;
+  font-size: 16px;
+}
+
+.view_more_desktop a {
+  text-decoration: none;
+  color: var(--text-yellow);
+  text-align: center;
+  font-size: 16px;
+  display: none;
+}
+
+.view_more_mobile {
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+
+
+@media all and (min-width: 769px) {
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+  .cards_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tiktok_container {
+    display: flex;
+    position: relative;
+  }
+
+  .view_more_mobile a{
+    display: none;
+  }
+
+  .view_more_desktop a{
+    display: inline;
+  }
+}

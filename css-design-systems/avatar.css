@@ -1,0 +1,19 @@
+img {
+    border-radius: 30px;
+    padding:10px
+}
+
+.sm_avatar img {
+height: 75px;
+aspect-ratio: 1;
+}
+
+.md_avatar img {
+    height: 100px;
+    aspect-ratio: 1;
+}
+
+.lg_avatar img {
+    height: 125px;
+aspect-ratio: 1;
+}

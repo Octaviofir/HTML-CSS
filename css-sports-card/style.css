@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #AB105E, #4c01a1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+.container {
+  width: 330px;
+  height: 500px;
+  background-color: orange;
+  border-radius: 8px;
+  position: relative;
+  background-image: linear-gradient(to right, #FF0E02, #F59116);
+  box-shadow: 20px 120px 50px 1px black;
+}
+
+.container_head {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 12px 12px 40px 12px;
+}
+
+h1 {
+  font-size: 20px;
+  color: white;
+}
+
+p {
+  font-size: 13px;
+  color: white;
+}
+
+.text_structure {
+  margin: 12px 12px;
+}
+
+.container_body {
+  color: white;
+  margin: 12px 12px;
+}
+
+.big_text {
+  font-size: 230px;
+  margin: 0;
+  text-align: center;
+  opacity: 0.4;
+  overflow: hidden;
+  font-weight: 550;
+  text-align: center;
+
+}
+
+.nike_shoes img {
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+}
+
+.footer_container {
+  background-color: red;
+  height: 100px;
+  
+}
+
+.footer {
+  height: 130px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 0 0 12px 12px;
+ 
+}
+
+button {
+  border: 3px solid; blue;
+  border-radius: 120px;
+  height: 50px;
+  width: 120px;
+  background-color: white;
+  color: blue;
+  font-size: 17px;
+  z-index: 1; 
+  position: relative;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+
+}
+
+button:active {
+    background-color: orange;
+    border-color: orange ;
+    color:white;
+}
+
+.footer_dislaimer {
+    margin-top: 15px;
+  color: black;
+  opacity: 0.3;
+  font-size: 14px;
+  letter-spacing: 7px;
+  word-spacing: 3px;
+  font-weight: 500;
+}

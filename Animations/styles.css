@@ -1,0 +1,272 @@
+html,
+body {
+  background-color: #e57474;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 16px;
+  font-family: roboto;
+}
+
+.container {
+  border-bottom: 1px solid gainsboro;
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+  padding: 64px 0px;
+}
+
+p {
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+/*Animação Perspective */
+
+.perspective {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 100px;
+  height: 75px;
+  background-color: rgb(126, 86, 255);
+  border-radius: 8px;
+  animation-name: translate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transform: skew(-45deg) translate(0, 0);
+}
+
+@keyframes translate {
+  to {
+    box-shadow: 20px 20px 8px;
+    transform: skew(-45deg) translate(-40px, -40px);
+  }
+}
+/*Animação Progress */
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.bar {
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.fillbar1 {
+  height: 8px;
+  background-color: rgb(126, 86, 255);
+  animation-name: fillbar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  border-radius: 10px;
+}
+.fillbar2 {
+  height: 8px;
+  background-color: rgb(126, 86, 255);
+  animation-name: fillbar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  border-radius: 10px;
+}
+.fillbar3 {
+  height: 8px;
+  background-color: rgb(126, 86, 255);
+  animation-name: fillbar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  border-radius: 10px;
+}
+
+.fillbar4 {
+  height: 8px;
+  background-color: rgb(126, 86, 255);
+  animation-name: fillbar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  border-radius: 10px;
+}
+
+@keyframes fillbar {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  100% {
+    width: 100%;
+  }
+
+}
+/*Animação Loading */
+.flex {
+  display: flex;
+}
+
+.container_square {
+  width: 50px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flex {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.units {
+  height: 10px;
+  aspect-ratio: 1;
+  background-color: rgb(126, 86, 255);
+  border-radius: 100%;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.51, -0.05, 0.58, 1);
+  animation-direction: alternate-reverse;
+}
+
+.units:nth-child(1) {
+  translate: -15px -15px;
+}
+.units:nth-child(2) {
+  translate: 15px -15px;
+}
+.units:nth-child(3) {
+  translate: 15px 15px;
+}
+.units:nth-child(4) {
+  translate: -15px 15px;
+}
+
+@keyframes move {
+  100% {
+    translate: 0px 0px;
+  }
+
+  /*Animação Appear */
+}
+
+.letters {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  transform: translate(0px, -5px);
+}
+
+.caracter {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity:0;
+  position: relative;
+}
+
+.caracter:nth-child(1) {
+  animation-delay: 1s;
+  
+}
+.caracter:nth-child(2) {
+  animation-delay: 2s;
+}
+.caracter:nth-child(3) {
+  animation-delay: 3s;
+}
+.caracter:nth-child(4) {
+  animation-delay: 4s;
+}
+.caracter:nth-child(5) {
+  animation-delay: 5s;
+}
+.caracter:nth-child(6) {
+  animation-delay: 6s;
+}
+.caracter:nth-child(7) {
+  animation-delay: 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+
+100% {
+  opacity: 1;
+  top: 15px;
+}
+
+}
+
+.pause {
+height: 50px;
+width: 100%;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+display: flex;
+align-items: center;
+position: absolute;
+}
+
+.pause_square {
+height: 30px;
+aspect-ratio: 1;
+background-color: rgb(126, 86, 255);
+animation-name: pause;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+animation-timing-function: linear;
+position: relative;
+}
+
+.pause_square:active {
+  animation-play-state: paused;
+  background-color: white;
+}
+
+
+@keyframes pause {
+0% {
+left: 0;
+}
+
+
+100% {
+  left: 100%;
+}
+
+}
