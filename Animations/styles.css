@@ -57,57 +57,43 @@ p {
 
 .bar {
   width: 200px;
+  height: 8px;
   border-radius: 10px;
   background-color: white;
   position: relative;
+  overflow: hidden;
+ 
+}
+
+.fillbar {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(126, 86, 255);
+  animation-name: fillbar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  border-radius: 10px;
+  animation: fillbar 2s linear;
+  position: absolute;
 }
 
 .fillbar1 {
-  height: 8px;
-  background-color: rgb(126, 86, 255);
-  animation-name: fillbar;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  border-radius: 10px;
+  animation-delay: 0s;
 }
 .fillbar2 {
-  height: 8px;
-  background-color: rgb(126, 86, 255);
-  animation-name: fillbar;
-  animation-duration: 2s;
-  animation-timing-function: linear;
   animation-delay: 2s;
-  border-radius: 10px;
 }
 .fillbar3 {
-  height: 8px;
-  background-color: rgb(126, 86, 255);
-  animation-name: fillbar;
-  animation-duration: 2s;
-  animation-timing-function: linear;
   animation-delay: 4s;
-  border-radius: 10px;
 }
-
 .fillbar4 {
-  height: 8px;
-  background-color: rgb(126, 86, 255);
-  animation-name: fillbar;
-  animation-duration: 2s;
-  animation-timing-function: linear;
   animation-delay: 6s;
-  border-radius: 10px;
 }
 
 @keyframes fillbar {
   0% {
     width: 0;
   }
-
-  50% {
-    width: 50%;
-  }
-
   100% {
     width: 100%;
   }
