@@ -199,7 +199,6 @@ video {
 .vertical_string {
   border: 1px solid var(--dark-grey);
   display: inline-block;
-  width: 0.5px;
   background-color: var(--dark-grey);
   height: 100px;
   position: absolute;
