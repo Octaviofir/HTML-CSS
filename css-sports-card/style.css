@@ -9,16 +9,23 @@ body {
   font-style: normal;
 }
 
-
-
-.container {
+.main_container {
   width: 330px;
   height: 500px;
-  background-color: orange;
   border-radius: 8px;
   position: relative;
   background-image: linear-gradient(to right, #FF0E02, #F59116);
   box-shadow: 20px 120px 50px 1px black;
+  animation: pendulum 1s infinite alternate ease-in-out;
+}
+
+@keyframes pendulum {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 
 .container_head {
@@ -84,7 +91,7 @@ p {
 }
 
 button {
-  border: 3px solid; blue;
+  border: 2px solid blue;
   border-radius: 120px;
   height: 50px;
   width: 120px;
@@ -94,7 +101,7 @@ button {
   z-index: 1; 
   position: relative;
   margin-top: 40px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 button:hover {
