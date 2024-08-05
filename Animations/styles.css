@@ -68,13 +68,14 @@ p {
 .fillbar {
   height: 100%;
   width: 100%;
-  background-color: rgb(126, 86, 255);
+  background-color: white;  
   animation-name: fillbar;
   animation-duration: 2s;
   animation-timing-function: linear;
   border-radius: 10px;
   animation: fillbar 2s linear;
   position: absolute;
+  animation-fill-mode: forwards;
 }
 
 .fillbar1 {
@@ -91,12 +92,14 @@ p {
 }
 
 @keyframes fillbar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  from{ 
+    width: 0%;
+    background-color: rgb(126, 86, 255);
+}
+to{ width: 100%;
+    background-color: rgb(126, 86, 255);
+
+}
 
 }
 /*Animação Loading */
