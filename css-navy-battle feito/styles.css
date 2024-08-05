@@ -55,65 +55,67 @@ pre {
 /* Coloca o teu CSS a partir daqui */
 .ball-0 {
     position: absolute; 
-    bottom:120px;
-    right: 40px;
+    bottom:20%;
+    left: 70%;
 
 }
 
 .ball-1 {
     position: absolute; 
-    top: 40px;
-    left: 120px;
+    top: 40%;
+    left: 40%;
 
 }
 
 .ball-2 {
     position: absolute; 
-    top: 120px;
-    right: 160px;
+    top: 10%;
+    right: 80%;
 }
 
 .ball-3 {
     position: absolute; 
-    top: 20%;
-    left: 20%;
+    top: 30%;
+    left: 10%;
 }
 
 .ball-4 {
     position: absolute; 
     bottom: 10%;
-    right: 20%;
+    right: 10%;
 }
 
 .ball-5 {
     position: absolute; 
-    top: 10%;
-    left: 20%;
+    top: 40%;
+    left: 60%;
 }
 
 .ball-6 {
     position: absolute; 
-    top: 20%;
-    left: 40%;
+    top: 70%;
+    left: 30%;
 }
 
 .ball-7 {
     position: absolute; 
-    right: 10%;
+    right: 30%;
+    bottom: 20%;
 }
 
 .ball-8 {
     position: absolute; 
-    top: 30%;
+    top: 20%;
+    right: 40%
 }
 
 .ball-9 {
     position: absolute; 
-    bottom: 10%;
+    left: 50%;
 }
 
 .ball-10 {
     position: absolute; 
-    bottom: 0;
-    right: 0;
+    left: 0;
+    bottom: 20%;
 }
