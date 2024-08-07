@@ -1,14 +1,10 @@
-.label_content {
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-}
-
 label {
   font-weight: 400;
   font-weight: 200;
   font-size: 12px;
   margin-bottom: 6px;
+  color: #3E3E3C;
+  line-height: 18px;
 }
 
 input {
@@ -17,31 +13,75 @@ input {
   border-radius: 4px;
   border: white;
   width: 200px;
+
 }
 
 .flex_inputs {
-  display: flex;
+display: flex;
+justify-content: left;
+gap: 40px;
+padding: 15px;
 }
 
-.status--focus {
-  border: 2px solid rgb(21, 137, 238, 0.7)  
+.icon_container {
+position: relative;
 }
 
-.status--disable {
-color:grey;
-background-color: #ecebeab9;
+.icon_container img {
+  width: 20px;
+  height: 20px;
+  }
+
+.icon_container textarea {
+  position: relative;
+  
+  }
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
 
-.error-label {
-  color: #C23934;
-  font-size: 12px;;
-  padding-top: 5px;
+.focus input {
+ border: 2px  solid #1589EE;
+ box-shadow: 0px 0px 3px 0px #0070D2;
+ margin-left: -2px;
 }
 
-.error_label input {
-  border: 1px solid #C23934;
+.focus input:focus {
+  border: 2px solid blue;
+  box-shadow: 0px 0px 3px 0px;
+  outline: none;
 }
 
-input:invalid + .error-message {
-  display: block;
-}
+.error input {
+  border: 2px  solid #C23934;
+ }
+ 
+ .error input:focus {
+   border: 2px solid #C23934;
+   box-shadow: 0px 0px 3px 0px;
+   outline: none;
+ }
+
+ .error--message {
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #C23934;
+
+ }
+
+ .icon_error {
+  position: relative;
+ }
+
+
+ .search-icon-error {
+  position: absolute;
+  top: 32%;
+  right: 10px;
+  transform: translateY(-50%);
+ }
